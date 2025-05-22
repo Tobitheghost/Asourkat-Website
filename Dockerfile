@@ -10,6 +10,6 @@ COPY . /app
 
 WORKDIR /app
 
-EXPOSE 5001
+EXPOSE 5000
 
 CMD ["gunicorn","--config","gunicorn.config.py","wsgi:app"]
